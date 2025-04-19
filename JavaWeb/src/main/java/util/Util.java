@@ -6,7 +6,7 @@ import java.awt.List;
 public class Util {
 
 	//判斷是否為數字
-		private static boolean isNumber(String data) {
+		public static boolean isNumber(String data) {
 			try {
 				Integer.parseInt(data);
 				return true;
@@ -16,7 +16,7 @@ public class Util {
 		}
 		
 		//判斷是否為數字
-		private static boolean isNumber2(String data) {
+		public static boolean isNumber2(String data) {
 			if(data == null)return false;
 			return data.matches("\\d+");
 		}

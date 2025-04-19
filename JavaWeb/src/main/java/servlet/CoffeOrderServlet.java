@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import util.Util;
-import model.CoffeOrder;
+import model.CoffeOrder1;
 
 @WebServlet("/CoffeeOrder")
 public class CoffeOrderServlet extends HttpServlet {
@@ -30,7 +30,7 @@ public class CoffeOrderServlet extends HttpServlet {
 			return;
 		}
 		//進行商業邏輯
-		CoffeOrder coffeOrder = new CoffeOrder(type,size,sugar);
+		CoffeOrder1 coffeOrder = new CoffeOrder1(type,size,sugar);
 		//resp.getWriter().print(coffeOrder.getInfo());
 		
 		RequestDispatcher rd=req.getRequestDispatcher("/WEB-INF/coffee_order.jsp");
