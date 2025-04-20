@@ -45,7 +45,7 @@ public class DrinkOrder1{
 	public String getInfo() {
 		String sizeText =sizeTable.get(size);
 		String iceText =iceTable.get(ice);
-		return String.format("您點了一杯 %s %s 飲料(%s) 價格：%d元", type,sizeText,iceText,price);
+		return String.format("您點了一杯 %s %s 飲料(%s) 價格：%d", type,sizeText,iceText,price);
 		
 	}
 
