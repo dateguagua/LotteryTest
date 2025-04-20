@@ -20,14 +20,14 @@ public class CoffeOrder1 {
 	public CoffeOrder1(String type,String size, String sugar) {
 		this.type=type;
 		this.size=size;
-		this.sugar = Boolean.parseBoolean(sugar);
+		this.sugar = Boolean.parseBoolean(sugar); //會將傳進來的字串（例如 "true" 或 "false"）轉成布林值（boolean），並指定給 this.sugar
 		this.price = priceTable.get(type).get(size);
 	} 
 	
 	public String getInfo() {
 		String sizeText =sizeTable.get(size);
 		String sugarText =sugarTable.get(sugar);
-		return String.format("您點了一杯 %s %s 咖啡(%s) 價格：%d元", size,type,sugar,price);
+		return String.format("您點了一杯 %s %s 咖啡(%s) 價格：%d元", type,sizeText,sugarText,price);
 	}
 
 	public String getType() {
