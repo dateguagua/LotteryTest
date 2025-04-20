@@ -12,6 +12,7 @@
 			飲料：${drinkOrder.type} <br/>
 			尺寸：${drinkOrder.sizeText}  <br/>
 			冰塊：${drinkOrder.iceText}  <br/>
+			甜度：${drinkOrder.sugarText} <br/>
 			${drinkOrder.info}  <br/>
 			</div>
 		</body>

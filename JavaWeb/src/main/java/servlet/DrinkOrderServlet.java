@@ -1,7 +1,8 @@
 package servlet;
 
 import java.io.IOException;
-import model.DrinkOrder1;
+import model.DrinkOrder2;
+//import model.DrinkOrder1;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -20,14 +21,17 @@ public class DrinkOrderServlet extends HttpServlet {
 		
 		String type = req.getParameter("type");
 		String size = req.getParameter("size");
-		String ice = req.getParameter("ice");
+		String ice = req.getParameter("ice"); 
+		String sugar = req.getParameter("sugar");
 		
-		if (type==null||size==null||ice==null) { 
+		if (type==null||size==null||ice==null||sugar==null) { 
 		resp.getWriter().print("輸入參數不正確");
 		return; //「這裡就結束方法，不繼續往下執行。」
 		}
 		
-		DrinkOrder1 drinkOrder =new DrinkOrder1(type, size, ice);
+		DrinkOrder2 drinkOrder =new DrinkOrder2(type, size, ice, sugar);
+		
+		//DrinkOrder1 drinkOrder =new DrinkOrder1(type, size, ice);
 		//resp.getWriter().print(drinkOrder.getinfo()); 
 		//想把資料傳給 JSP 顯示 這行先確定有沒有成功
 		
