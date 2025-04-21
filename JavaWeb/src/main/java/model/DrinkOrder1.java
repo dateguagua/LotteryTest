@@ -19,7 +19,7 @@ public class DrinkOrder1{
 	public DrinkOrder1(String type, String size,String ice ){ //欄位是你的物件有什麼屬性 建構子是你建立物件時怎麼把值裝進這些欄位裡
 		this.type=type;
 		this.size=size;
-		this.ice =Boolean.parseBoolean(ice);
+		this.ice =Boolean.parseBoolean(ice); //如果字串是 "true"（大小寫不拘），回傳 true
 		this.price =priceTable.get(type).get(size); 
 		//根據使用者選擇的 type（飲料種類）和 size（尺寸），
 		//從價格對照表 priceTable 中查出正確的價格，然後指派給 this.price

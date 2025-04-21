@@ -23,6 +23,9 @@ public class DrinkOrderServlet extends HttpServlet {
 		String size = req.getParameter("size");
 		String ice = req.getParameter("ice"); 
 		String sugar = req.getParameter("sugar");
+		//從「前端送來的請求資料」裡，抓出名字叫做 "ice" 的參數，存進 ice 這個變數裡
+		//ice = ice.trim().toLowerCase(); // 去掉空白 & 統一大小寫
+		
 		
 		if (type==null||size==null||ice==null||sugar==null) { 
 		resp.getWriter().print("輸入參數不正確");
