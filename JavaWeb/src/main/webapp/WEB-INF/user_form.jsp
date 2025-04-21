@@ -20,20 +20,20 @@
 		<body style="padding :20px"> 
 			<div class ="form-container">
 			<h2>使用者資料表單</h2>
-			<form class="pure-form pure-form-stacked" method="post" action"/JavaWeb/user">
+			<form class="pure-form pure-form-stacked" method="post" action="/JavaWeb/user">
 				<fieldset>
 					<legend>User Form</legend>
 					<lable>姓名：</lable>
 					<input id = "userName" name="userName" type="text" required/>
-					
+					</p>
 					<lable>性別：</lable>
 					<lable class="pure-radio"/>
-						<input name="gender" type="radio" value="male" checked>&nbsp;男
+					<input name="gender" type="radio" value="male" checked>&nbsp;男
 					</lable>
 					<lable class="pure-radio"/>
 						<input name="gender" type="radio" value="male">&nbsp;女
 					</lable>
-					
+					</p>
 					<lable>年齡</lable>
 					<input name="age" type="number" min="1" max="150" required />
 					
