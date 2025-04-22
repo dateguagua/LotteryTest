@@ -55,8 +55,6 @@ public class CoffeeMaker {
 			this.describe = "牛奶與咖啡的比例較為普通，適合日常飲用";
 		}
 	}
-//rules.add(new CoffeeRule("濃郁的拿鐵","牛奶的比例遠高於咖啡，味道偏向牛奶",
-		//(milk, coffee)-> milk >= 3* coffee));
 
 
 	public String getType() {

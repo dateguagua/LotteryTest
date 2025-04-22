@@ -28,7 +28,7 @@
 				咖啡量：${CoffeeMaker.coffee}(ml)<p/>
 				該種類風味描述:${CoffeeMaker.describe}<p/>
 				
-				<a href="/JavaWeb/user" class="pure-button pure-button-primary">返回</a> <!-- 網址的都是get -->
+				<a href="/JavaWeb/CoffeeMaker" class="pure-button pure-button-primary">返回</a> <!-- 網址的都是get -->
 			</fieldset>
 		</body>
 </html>
