@@ -47,8 +47,8 @@
 						<tbody>
 							<c:forEach varStatus ="i" var ="no" items="${guestbooks}"> <!-- 有編碼的排列出來 -->
 								<tr>
-									<td>$ {i.index +1}</td>
-									<td>${ no.message }</td>
+									<td>${i.index+1}</td> <%-- ${ } 有空格會被當純文字 EX: $ { }--%> 
+									<td>${no.message}</td>
 									<td> 
 									<!-- 格式化日期 -->
 									<fmt:formatDate value="${ no.date }" pattern="yyyy-MM-dd a hh:mm:ss E" />
