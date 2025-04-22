@@ -31,7 +31,7 @@
 				留言：${message}<p/>  <!-- 因為是字串 前面不用xxx. -->
 				留言紀錄：${guestbooks}<p/>   <!-- 因為是陣列 前面不用xxx. -->
 				<ol>
-					<c:forEach var ="no" items="${guestbooks}">
+					<c:forEach var ="no" items="${guestbooks}"> <!-- 有編碼的排列出來 -->
 						<li>${ no.message } ${ no.date }</li>
 					</c:forEach>
 				</ol>
