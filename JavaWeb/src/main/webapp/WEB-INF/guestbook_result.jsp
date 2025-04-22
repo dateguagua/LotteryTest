@@ -35,7 +35,29 @@
 						<li>${ no.message } ${ no.date }</li>
 					</c:forEach>
 				</ol>
-				
+				<p>
+					<table class ="pure-table pure-table-bordered">
+						<thead>
+							<tr>
+								<th>No</th>
+								<th>留言內容</th>
+								<th>留言時間</th>
+							</tr>
+						</thead>
+						<tbody>
+							<c:forEach varStatus ="i" var ="no" items="${guestbooks}"> <!-- 有編碼的排列出來 -->
+								<tr>
+									<td>$ {i.index +1}</td>
+									<td>${ no.message }</td>
+									<td> 
+									<!-- 格式化日期 -->
+									<fmt:formatDate value="${ no.date }" pattern="yyyy-MM-dd a hh:mm:ss E" />
+									</td>
+								</tr>
+							</c:forEach>
+						</tbody>
+					</table>
+				</p>
 				<a href="/JavaWeb/guestbook" class="pure-button pure-button-primary">返回</a> <!-- 網址的都是get -->
 			</fieldset>
 		</body>
