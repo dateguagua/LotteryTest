@@ -36,6 +36,7 @@
 					</c:forEach>
 				</ol>
 				<p>
+				目前留言筆數${fn:length(guestbooks)}
 					<table class ="pure-table pure-table-bordered">
 						<thead>
 							<tr>
@@ -50,8 +51,8 @@
 									<td>${i.index+1}</td> <%-- ${ } 有空格會被當純文字 EX: $ { }--%> 
 									<td>${no.message}</td>
 									<td> 
-									<!-- 格式化日期 -->
-									<fmt:formatDate value="${ no.date }" pattern="yyyy-MM-dd a hh:mm:ss E" />
+										<!-- 格式化日期 -->
+										<fmt:formatDate value="${ no.date }" pattern="yyyy-MM-dd a hh:mm:ss E" />
 									</td>
 								</tr>
 							</c:forEach>
